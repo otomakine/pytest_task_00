@@ -36,11 +36,12 @@
   - **```close_ssh```** (закрывает SSH сессию в начале сессии)
   - **```execute_ssh_query```** (можно укоротить, исполняет запрос, принимает запрос как параметр)
   - **```check_file_exists```** (можно укоротить, проверяет существование файла, тест падает если файл не найден)
-    
+- Можно также сравнивать конфиг файлы с файлами-темплейтами и т.д.
+  
 <details><img style="" src="https://github.com/otomakine/pytest_task_00/assets/29117632/c88c732c-582b-4a4a-8069-440c275dd44a">
 <summary><img valign="bottom" width="20" height="20" src="https://img.icons8.com/retro/32/image.png" alt="image"/>
   Результат вывода <b>check_file_exists</b> файл не найден</summary></details>
-- Можно так же рассмотреть случаи когда несколько одинаковых параметров в файле и т.д.
+
 
 ![image](https://github.com/otomakine/pytest_task_00/assets/29117632/59875854-0a4e-4be4-b6d3-fb388b099def)
 
