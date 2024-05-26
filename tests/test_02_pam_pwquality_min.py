@@ -18,6 +18,14 @@ def test_pam_pwquality_min():
         "ocredit": -4,
         "minlen": 5,
     }
+    test_reference_values = {
+        "retry": 3,
+        "ucredit": 0,
+        "lcredit": 0,
+        "dcredit": 0,
+        "ocredit": 0,
+        "minlen": 8,
+    }
 
     # Подключение к серверу по SSH
     ssh = paramiko.SSHClient()
@@ -33,15 +41,19 @@ def test_pam_pwquality_min():
 
         if key not in reference_values:
             print(f"{key} не найдено в текущей политике")
-        elif reference_values[key] != str(reference_value):
+        elif reference_values[key] != int(effective_value):
             print(f"{key}: текущее значение {effective_value} не совпадает с эталонным {reference_values[key]}")
             error_count += 1
         else:
             print(f"{key}: текущее значение {effective_value} совпадает с эталонным {reference_values[key]}")
-    print(f"Тест упал: {error_count} текущих параметров не совпало с эталонными значениями")
 
     # Закрытие SSH-соединения
     ssh.close()
 
     # Падаем если хотя бы 1 параметр не совпадает
-    pytest.fail(f"Тест упал: {error_count} параметров не совпало") if error_count > 0 else print("Всё ОК")
+    if error_count > 0:
+        error_msg = f"Тест упал: {error_count} текущих параметров не совпало с эталонными значениями"
+        print(error_msg)
+        pytest.fail(error_msg)
+    else:
+        print("Все текущие параметры совпали с эталонными. Всё ОК")
