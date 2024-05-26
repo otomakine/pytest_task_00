@@ -25,12 +25,14 @@
 
 
 ### Работа над новой '_plus' версией
+- Новый **[test_01_permitrootlogon_plus.py](https://github.com/otomakine/pytest_task_00/blob/main/tests/test_01_permitrootlogon_plus.py)** короче и использует функции из фикстур
 - Переменные для подключения вынесены в **[tests\secrets.py](https://github.com/otomakine/pytest_task_00/blob/main/tests/secrets.py)** (```host, port, username, password```)
-- В файл с ```фикстурами``` **[tests\conftest.py](https://github.com/otomakine/pytest_task_00/blob/main/tests/conftest.py)** добавлены следующие функции:
+- В файл с фикстурами **[tests\conftest.py](https://github.com/otomakine/pytest_task_00/blob/main/tests/conftest.py)** добавлены следующие функции:
   - **```open_ssh```** (открывает SSH сессию в начале сессии)
   - **```close_ssh```** (закрывает SSH сессию в начале сессии)
   - **```execute_ssh_query```** (можно укоротить, исполняет запрос, принимает запрос как параметр)
-- Добавляю проверку существования файла ..
+- Добавил проверку существования файла, добавляю падение если не существует
+- Можно так же рассмотреть случаи когда несколько одинаковых параметров в файле и т.д.
 
 ![image](https://github.com/otomakine/pytest_task_00/assets/29117632/59875854-0a4e-4be4-b6d3-fb388b099def)
 
