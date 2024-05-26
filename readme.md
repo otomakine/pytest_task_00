@@ -40,7 +40,7 @@
   
 <details><img style="" src="https://github.com/otomakine/pytest_task_00/assets/29117632/c88c732c-582b-4a4a-8069-440c275dd44a">
 <summary><img valign="bottom" width="20" height="20" src="https://img.icons8.com/retro/32/image.png" alt="image"/>
-  Результат вывода <b>check_file_exists</b> файл не найден</summary></details>
+  Результат вывода <b>check_file_exists</b> если файл не найден</summary></details>
 
 
 ![image](https://github.com/otomakine/pytest_task_00/assets/29117632/59875854-0a4e-4be4-b6d3-fb388b099def)
