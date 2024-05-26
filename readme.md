@@ -7,7 +7,7 @@
 - Текст задания: hidden
 - Минимальная рабочаая версия: **[tests\test_01_permitrootlogon_min.py](https://github.com/otomakine/pytest_task_00/blob/main/tests/test_01_permitrootlogon_min.py)**
 <details>
-<img style="width:1700px" src="https://github.com/otomakine/pytest_task_00/assets/29117632/3673cae3-a4c8-43bc-a46c-4b4e2b99ec3c)">
+<img style="" src="https://github.com/otomakine/pytest_task_00/assets/29117632/3673cae3-a4c8-43bc-a46c-4b4e2b99ec3c)">
 <summary>Результат вывода (у меня на Убунте значение PermitRootLogin prohibit-password</summary></details>
 
 ### Тестовое задание №2
