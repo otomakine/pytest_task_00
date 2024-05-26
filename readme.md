@@ -29,11 +29,11 @@
 
 
 ### Работа над новой '_plus' версией
-- Новый версия теста **[tests\test_01_permitrootlogon_plus.py](https://github.com/otomakine/pytest_task_00/blob/main/tests/test_01_permitrootlogon_plus.py)** короче и использует функции из фикстур
+- Новая версия теста **[tests\test_01_permitrootlogon_plus.py](https://github.com/otomakine/pytest_task_00/blob/main/tests/test_01_permitrootlogon_plus.py)** короче и использует функции из фикстур
 - Переменные для подключения вынесены в **[tests\secrets.py](https://github.com/otomakine/pytest_task_00/blob/main/tests/secrets.py)** (```host, port, username, password```)
 - В файл с фикстурами **[tests\conftest.py](https://github.com/otomakine/pytest_task_00/blob/main/tests/conftest.py)** добавлены следующие функции:
   - **```open_ssh```** (открывает SSH сессию в начале сессии)
-  - **```close_ssh```** (закрывает SSH сессию в начале сессии)
+  - **```close_ssh```** (будет закрывать SSH сессию в конце сессии)
   - **```execute_ssh_query```** (можно укоротить, исполняет запрос, принимает запрос как параметр)
   - **```check_file_exists```** (можно укоротить, проверяет существование файла, тест падает если файл не найден)
 - Можно также сравнивать конфиг файлы с файлами-темплейтами и т.д.
