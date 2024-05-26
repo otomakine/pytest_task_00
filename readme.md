@@ -41,7 +41,7 @@
 <summary><img valign="bottom" width="20" height="20" src="https://img.icons8.com/retro/32/image.png" alt="image"/>
   Результат вывода <b>check_file_exists</b> файл не найден</summary></details>
 - Можно так же рассмотреть случаи когда несколько одинаковых параметров в файле и т.д.
-
+<br><br>
 ![image](https://github.com/otomakine/pytest_task_00/assets/29117632/59875854-0a4e-4be4-b6d3-fb388b099def)
 
 
