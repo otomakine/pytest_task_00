@@ -4,7 +4,7 @@
 - С помощью Hyper-V создал виртуалку, установил из ```iso``` Ubuntu 24 LTS, поднял SSH, изменил порт с ```22``` на ```2200```, проверил подключение через ```ssh user@ip_address```
 
 ### Тестовое задание №1
-- Текст задания: hidden
+- Текст задания: %hidden%
 - Минимальная рабочаая версия: **[tests\test_01_permitrootlogon_min.py](https://github.com/otomakine/pytest_task_00/blob/main/tests/test_01_permitrootlogon_min.py)**
 
 <details><img style="" src="https://github.com/otomakine/pytest_task_00/assets/29117632/3673cae3-a4c8-43bc-a46c-4b4e2b99ec3c">
@@ -14,7 +14,7 @@
 <summary>Результат вывода если текущее значение совпадает с эталонным</summary></details>
 
 ### Тестовое задание №2
-- Текст задания: hidden
+- Текст задания: %hidden%
 - Минимальная рабочаая версия: **[tests\test_02_pam_pwquality_min.py](https://github.com/otomakine/pytest_task_00/blob/main/tests/test_02_pam_pwquality_min.py)**
 
 <details><img style="" src="https://github.com/otomakine/pytest_task_00/assets/29117632/70e7ef85-7cc3-495c-b143-baaaf715cd5a">
@@ -31,7 +31,10 @@
   - **```open_ssh```** (открывает SSH сессию в начале сессии)
   - **```close_ssh```** (закрывает SSH сессию в начале сессии)
   - **```execute_ssh_query```** (можно укоротить, исполняет запрос, принимает запрос как параметр)
-- Добавил проверку существования файла, добавляю падение если не существует
+  - **```check_file_exists```** (можно укоротить, проверяет существование файла, пока еще не добавил падение если файл не найден)
+    
+<details><img style="" src="https://github.com/otomakine/pytest_task_00/assets/29117632/c88c732c-582b-4a4a-8069-440c275dd44a">
+<summary>Результат вывода ```check_file_exists``` файл не найден</summary></details>
 - Можно так же рассмотреть случаи когда несколько одинаковых параметров в файле и т.д.
 
 ![image](https://github.com/otomakine/pytest_task_00/assets/29117632/59875854-0a4e-4be4-b6d3-fb388b099def)
