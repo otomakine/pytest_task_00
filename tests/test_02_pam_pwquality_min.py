@@ -41,6 +41,7 @@ def test_pam_pwquality_min():
 
         if key not in reference_values:
             print(f"{key} не найдено в текущей политике")
+            error_count += 1
         elif reference_values[key] != int(effective_value):
             print(f"{key}: текущее значение {effective_value} не совпадает с эталонным {reference_values[key]}")
             error_count += 1
