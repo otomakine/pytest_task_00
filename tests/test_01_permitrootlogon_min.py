@@ -20,6 +20,7 @@ def test_permitrootlogon():
 
     # Сравнение с эталонным значением
     reference_value = "yes"
+    test_reference_value = "prohibit-password"
     print(" Результат:")
     error_count = 0
     if effective_value == reference_value:
