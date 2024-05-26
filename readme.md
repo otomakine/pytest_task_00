@@ -4,7 +4,9 @@
 - С помощью Hyper-V создал виртуалку, установил из ```iso``` Ubuntu 24 LTS, поднял SSH, изменил порт, проверил подключение через ```ssh user@ip_address```
 
 ### Тестовое задание №1
-hidden
+Зедание: hidden
+Минимальная рабочаая версия: test_01_permitrootlogon_min.py
 
 ### Тестовое задание №2
-hidden
+Зедание: hidden
+Минимальная рабочаая версия: test_01_permitrootlogon_min.py
