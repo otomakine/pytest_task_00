@@ -25,12 +25,13 @@
 
 
 ### Работа над новой '_plus' версией
-- Переменные для подключения вынесены в tests\secrets.py (```host, port, username, password```)
-- В файл с ```фикстурами``` tests\conftest.py добавлены следующие функции:
+- Переменные для подключения вынесены в **[tests\secrets.py](https://github.com/otomakine/pytest_task_00/blob/main/tests/secrets.py)** (```host, port, username, password```)
+- В файл с ```фикстурами``` **[tests\conftest.py](https://github.com/otomakine/pytest_task_00/blob/main/tests/conftest.py)** добавлены следующие функции:
   - **```open_ssh```** (открывает SSH сессию в начале сессии)
   - **```close_ssh```** (закрывает SSH сессию в начале сессии)
   - **```execute_ssh_query```** (можно укоротить, исполняет запрос, принимает запрос как параметр)
 - Добавляю проверку существования файла ..
- 
-![image](https://github.com/otomakine/pytest_task_00/assets/29117632/c0242659-5a15-432e-b111-f80fa2fe1fb6)
+
+![image](https://github.com/otomakine/pytest_task_00/assets/29117632/59875854-0a4e-4be4-b6d3-fb388b099def)
+
 
