@@ -25,7 +25,7 @@
 
 
 ### Работа над новой '_plus' версией
-- Новый **[test_01_permitrootlogon_plus.py](https://github.com/otomakine/pytest_task_00/blob/main/tests/test_01_permitrootlogon_plus.py)** короче и использует функции из фикстур
+- Новый **[tests\test_01_permitrootlogon_plus.py](https://github.com/otomakine/pytest_task_00/blob/main/tests/test_01_permitrootlogon_plus.py)** короче и использует функции из фикстур
 - Переменные для подключения вынесены в **[tests\secrets.py](https://github.com/otomakine/pytest_task_00/blob/main/tests/secrets.py)** (```host, port, username, password```)
 - В файл с фикстурами **[tests\conftest.py](https://github.com/otomakine/pytest_task_00/blob/main/tests/conftest.py)** добавлены следующие функции:
   - **```open_ssh```** (открывает SSH сессию в начале сессии)
