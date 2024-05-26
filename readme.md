@@ -9,7 +9,7 @@
 
 <details><img style="" src="https://github.com/otomakine/pytest_task_00/assets/29117632/3673cae3-a4c8-43bc-a46c-4b4e2b99ec3c">
 <summary><img valign="bottom" width="20" height="20" src="https://img.icons8.com/retro/32/image.png" alt="image"/>
-  Результат вывода (у меня на Убунте значение PermitRootLogin prohibit-password</summary></details>
+  Результат вывода с ошибкой (у меня на Убунте значение PermitRootLogin => 'prohibit-password')</summary></details>
 
 <details><img style="" src="https://github.com/otomakine/pytest_task_00/assets/29117632/c79325b6-a539-47ab-b556-6f31073ac342">
 <summary><img valign="bottom" width="20" height="20" src="https://img.icons8.com/retro/32/image.png" alt="image"/>
@@ -21,7 +21,7 @@
 
 <details><img style="" src="https://github.com/otomakine/pytest_task_00/assets/29117632/70e7ef85-7cc3-495c-b143-baaaf715cd5a">
 <summary><img valign="bottom" width="20" height="20" src="https://img.icons8.com/retro/32/image.png" alt="image"/>
-  Результат вывода (у меня на Убунте все 6 значений не совпадают с эталонными)</summary></details>
+  Результат вывода с ошибкой (у меня на Убунте все 6 значений не совпадают с эталонными)</summary></details>
 
 <details><img style="" src="https://github.com/otomakine/pytest_task_00/assets/29117632/a4ce7173-8493-41c9-9460-66b684a7796b">
 <summary><img valign="bottom" width="20" height="20" src="https://img.icons8.com/retro/32/image.png" alt="image"/>
