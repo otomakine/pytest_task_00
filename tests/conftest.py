@@ -1,4 +1,3 @@
-# Здесь будут общие функции, напр. для подключения по ssh
 import pytest
 import paramiko
 from secrets import *
@@ -40,6 +39,10 @@ def check_file_exists(open_ssh):
         stdin, stdout, stderr = ssh.exec_command(f"if [ -f {filename} ]; then echo '{filename} file exists'; else echo '{filename} file does not exist'; fi;") # {filename}
         query_result = stdout.read().decode("utf-8").strip()
         print(f"fixture_check_file_exists_result: {query_result}")
+        if "does not exist" in query_result:
+            error_msg = f"\n{"="*92}\n[!!!] Файл '{filename}' не найден, необходимые данные не могут быть считаны.[!!!]\n{"="*92}"
+            print(error_msg)
+            pytest.fail(error_msg)
         return query_result
 
     # print(f"fixture.ssh_query._execute_ssh_query.returned: {_execute_ssh_query}")
@@ -53,7 +56,7 @@ def execute_ssh_query(open_ssh):
     def _ssh_query(query):
         # Получение результата запроса по SSH
         print("")
-        print(f"fixture_ssh_query: {query}")
+        print(f"fixture_ssh_query : {query}")
         stdin, stdout, stderr = ssh.exec_command(query)
         query_result = stdout.read().decode("utf-8").strip()
         print(f"fixture_ssh_result: {query_result}")
@@ -61,4 +64,3 @@ def execute_ssh_query(open_ssh):
 
     # print(f"fixture.ssh_query._execute_ssh_query.returned: {_execute_ssh_query}")
     return _ssh_query
-
